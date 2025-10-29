@@ -62,7 +62,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_liian_suuri_otto_tyhjentaa_varaston(self):
         self.varasto.lisaa_varastoon(8)
-        saatu_maara = self.varasto.ota_varastosta()
+        saatu_maara = self.varasto.ota_varastosta(10)
         self.assertAlmostEqual(saatu_maara, 8)
         self.assertAlmostEqual(self.varasto.saldo, 0)
 
