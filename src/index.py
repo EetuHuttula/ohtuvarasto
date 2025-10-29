@@ -10,7 +10,7 @@ def main():
     print(f"Olutvarasto: {outta}")
 
     print("Olut getterit:")
-    print(f"saldo = {olutta.saldo}")
+    print(f"saldo = {olutt.saldo}")
     print(f"tilavuus = {olutta.tilavuus}")
     print(f"paljonko_mahtuu = {olutta.paljonko_mahtuu()}")
 
