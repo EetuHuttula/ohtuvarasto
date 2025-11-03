@@ -2,7 +2,7 @@
 ignore-paths=src/tests
 ignore=single_file_to_ignore.py
 
-ignore-paths=src/tests
+ignore-paths=src/tests/*
 ignore= index.py
 
 [MESSAGE CONTROL]
