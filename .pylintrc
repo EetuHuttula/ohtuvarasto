@@ -1,9 +1,6 @@
 [MASTER]
-ignore-paths=src/tests
-ignore=single_file_to_ignore.py
-
-ignore-paths=src/tests/*
-ignore= index.py
+ignore=index.py,.pylintrc
+ignore-patterns=.*varasto_test.*
 
 [MESSAGE CONTROL]
 
@@ -23,13 +20,12 @@ disable=raw-checker-failed,
 [DESIGN]
 max-line-length = 80
 indent-string = '    '
+max-args=4
 
 [REFACTORING]
 max-nested-blocks = 2
 max-statements = 10
 
-[DESIGN]
-max-args=4
 
 [BASIC]
 method-naming-style = snake_case
