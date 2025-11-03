@@ -2,6 +2,9 @@
 ignore-paths=src/tests
 ignore=single_file_to_ignore.py
 
+ignore-paths=src/tests
+ignore= index.py
+
 [MESSAGE CONTROL]
 
 disable=raw-checker-failed,
@@ -16,8 +19,17 @@ disable=raw-checker-failed,
         missing-function-docstring,
         missing-class-docstring
 
-[FORMAT]
-
-[REFACTORING]
 
 [DESIGN]
+max-line-length = 80
+indent-string = '    '
+
+[REFACTORING]
+max-nested-blocks = 2
+max-statements = 10
+
+[DESIGN]
+max-args=4
+
+[BASIC]
+method-naming-style = snake_case
